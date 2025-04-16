@@ -4,8 +4,8 @@
 
 ## How to run
 - please use node 18.20.8 or higher
-- run in the root folder ```npm install```
-- run ```npm run start``` to start both frontend and backend
+- Terminal: run in the root folder ```npm install```
+- Terminal: run ```npm run start``` to start both frontend and backend
 - open the browser and navigate to http://localhost:4200
 
 ## Inital Thoughts
