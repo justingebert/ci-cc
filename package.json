@@ -1,0 +1,16 @@
+{
+  "name": "cc-ci",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm run serve:frontend\" \"npm run serve:backend\"",
+    "serve:frontend": "cd apps/bug-tracker-frontend && ng serve",
+    "serve:backend": "cd apps/bug-tracker-backend && ts-node src/server.ts"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
