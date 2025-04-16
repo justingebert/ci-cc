@@ -1,0 +1,23 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="bug-form">
+    <label>
+      Title:
+      <input type="text" formControlName="title" />
+    </label>
+  
+    <label>
+      Description:
+      <textarea formControlName="description"></textarea>
+    </label>
+  
+    <label>
+      Priority:
+      <select formControlName="priority">
+        <option value="" disabled>Select priority</option>
+        @for (p of priorities; track p) {
+          <option [value]="p">{{ p }}</option>
+        }
+      </select>
+    </label>
+  
+    <button type="submit" [disabled]="form.invalid">Submit</button>
+  </form>

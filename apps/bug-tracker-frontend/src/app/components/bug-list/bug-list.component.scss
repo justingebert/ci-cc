@@ -1,0 +1,27 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    max-width: 600px;
+  
+    li {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #f3f3f3;
+      border-left: 5px solid #007acc;
+      border-radius: 0.4rem;
+  
+      strong {
+        font-size: 1.1rem;
+        color: #222;
+      }
+  
+      small {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        color: #666;
+      }
+    }
+  }
+  

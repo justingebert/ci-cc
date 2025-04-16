@@ -1,0 +1,12 @@
+<ul>
+    @for (bug of bugs(); track bug.id) {
+      <li>
+        <strong>{{ bug.title }}</strong> - {{ bug.priority }}<br />
+        {{ bug.description }}<br />
+        <small>{{ bug.createdAt | date: 'short' }}</small>
+      </li>
+    }
+    @empty {
+      <li>No bugs found. Add one to get started!</li>
+    }
+  </ul>
